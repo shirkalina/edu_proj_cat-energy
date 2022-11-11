@@ -37,16 +37,21 @@
       </nav>
     </header>
     <main class="page-main">
-      <section class="page-main_header">
-        <div class="pade-main__wrapper">
+      <section class="page-main__header">
+        <div class="page-main__wrapper">
           <h1 class="page-main__title">
             Функциональное <br />
             питание для котов
           </h1>
           <p>Занялся собой? Займись котом!</p>
-          <a class="button" href="form.html" type="button">
-            подобрать программу
-          </a>
+          <img
+            class="background-photo"
+            src="img/cat-energy-bg.png"
+            width="300"
+            height="270"
+            alt="Cat Energy."
+          />
+          <a class="button" href="form.html"> подобрать программу </a>
         </div>
       </section>
       <section class="programms">
@@ -60,10 +65,11 @@
           <a href="" class="programm-slim__button"
             >каталог slim
             <img
-              class="programm-button__icon"
+              class="programms__button"
               src="img/programm-button-icon.svg"
               width="32"
               height="10"
+              alt="Перейти."
             />
           </a>
         </div>
@@ -76,10 +82,11 @@
           <a href="" class="programm-pro__button"
             >каталог pro
             <img
-              class="programm-button__icon"
+              class="programms__button"
               src="img/programm-button-icon.svg"
               width="32"
               height="10"
+              alt="Перейти."
             />
           </a>
         </div>
@@ -87,7 +94,7 @@
       <section class="about-programms">
         <div class="about-programms__wrapper">
           <h2 class="about-programms__title">Как это работает</h2>
-          <ul class="about-programms__list">
+          <ol class="about-programms__list">
             <li class="about-programms__item">
               Функциональное питание содержит только полезные питательные
               вещества.
@@ -104,7 +111,7 @@
               Уже через месяц наслаждайтесь изменениями к лучшему вашего
               питомца!
             </li>
-          </ul>
+          </ol>
         </div>
       </section>
       <section class="programm-example">
@@ -126,7 +133,7 @@
           </div>
           <p class="stats-price">Затраты на питание: 15 000 РУБ.</p>
           <div class="before-after__wrapper">
-            <div class="before-agter__images">
+            <div class="before-after__images">
               <img
                 class="before-img img-active"
                 src="img/cat-fat.png"
@@ -142,12 +149,12 @@
                 alt="Фото кота после."
               />
             </div>
-            <div class="before-agter__range">
-              <button class="before-agter__button">Было</button>
-              <div class="before-agter__progress">
-                <div class="before-agter__tog"></div>
+            <div class="before-after__range">
+              <button class="before-after__button">Было</button>
+              <div class="before-after__progress">
+                <div class="before-after__tog"></div>
               </div>
-              <button class="before-agter__button">Стало</button>
+              <button class="before-after__button">Стало</button>
             </div>
           </div>
         </div>
@@ -155,6 +162,7 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__cooperation-info">
+        <h2 class="visually-hidden">Контакты</h2>
         <p class="cooperation-info__text">
           приглашаем к сотрудничеству дилеров!
         </p>
@@ -162,7 +170,15 @@
           ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
         </p>
       </div>
-      <div class="page-footer__map"></div>
+      <div class="page-footer__map">
+        <img
+          class="map__img"
+          src="img/map-mobile.jpg"
+          width="320"
+          height="362"
+          alt="Адрес на карте."
+        />
+      </div>
       <div class="page-footer__wrapper">
         <a href="#" class="page-header__logo page-header__logo--text">
           <img
