@@ -1,0 +1,39 @@
+// main: ../../style.less
+
+.bonus {
+  width: 279px;
+  height: 289px;
+
+  margin: 36px 20px;
+
+  background-image: url(../../../../../img/bonus-mobile.jpg);
+  background-color: #68b738;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+
+.bonus p {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  text-align: center;
+  padding-top: 187px;
+
+  color: #ffffff;
+}
+
+.bonus::before {
+  content: "";
+  position: absolute;
+  background-image: url(../../../../../img/icons/icon-gift.svg);
+  background-repeat: no-repeat;
+  z-index: 1;
+  width: 78px;
+  height: 80px;
+  top: 58px;
+  left: 101px;
+}

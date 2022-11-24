@@ -4,7 +4,69 @@
 
 @import url(vars.less);
 
-body {
-  background: red;
-  color: aliceblue;
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Oswald"), url("../../../fonts/oswaldregular.woff") format("woff"),
+    url("../../../fonts/oswaldregular.woff2") format("woff2");
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  color: #000;
+
+  width: @mobilewidth;
+
+  margin: 0 auto;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page-main {
+  margin: 0 20px;
+}
+
+@import url(blocks/page-header.less);
+@import url(blocks/burger-menu.less);
+@import url(blocks/index/index-main.less);
+@import url(blocks/btn.less);
+@import url(blocks/index/index-programm-card.less);
+@import url(blocks/index/index-about-programm.less);
+@import url(blocks/index/index-programm-example.less);
+@import url(blocks/index/index-images-slider.less);
+@import url(blocks/footer-cooperation.less);
+@import url(blocks/footer-map.less);
+@import url(blocks/footer-media.less);
+@import url(blocks/catalog/catalog-products.less);
+@import url(blocks/catalog/catalog-addictional.less);
+@import url(blocks/catalog/catalog-bonus.less);
+@import url(blocks/form/form.less);
+@import url(blocks/form/form-info.less);
+@import url(blocks/form/form-purpose.less);
+@import url(blocks/form/form-contacts.less);
+@import url(blocks/form/form-comment.less);
+@import url(blocks/form/form-addictional.less);

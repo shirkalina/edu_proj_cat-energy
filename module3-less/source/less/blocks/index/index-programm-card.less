@@ -1,0 +1,66 @@
+// main: ../../style.less
+
+.programms {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 24px 20px 0px;
+}
+
+.programm-card {
+  background-color: @bacisgrey;
+  height: 266px;
+  box-sizing: border-box;
+  padding: 20px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.programm-card__title {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+
+  color: #000000;
+  margin: 0 0 29px 72px;
+}
+
+.programm-slim__title::before {
+  content: "";
+  background-image: url(../../../../img/cat-back-slim.png);
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 53px;
+  background-size: contain;
+  position: absolute;
+
+  top: 11px;
+  left: 22px;
+}
+
+.programm-pro__title::before {
+  content: "";
+  background-image: url(../../../../img/cat-back-pro.png);
+  background-repeat: no-repeat;
+  width: 67px;
+  height: 50px;
+  background-size: contain;
+  position: absolute;
+
+  top: 14px;
+  left: 13px;
+}
+
+.programm-card__info {
+  .text();
+  margin: 0;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #d9d9d9;
+  margin-bottom: 15px;
+}
+
+.programms__button img {
+  margin-left: 12px;
+}

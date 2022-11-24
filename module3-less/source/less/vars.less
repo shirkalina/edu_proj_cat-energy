@@ -1,11 +1,29 @@
 // main: style.less
 
 // файл с назначением всех переменных
+@mobilewidth: 320px;
+@tabletwidth: 768px;
+@desktopwidth: 1440px;
+@basicgreen: #68b738;
+@bacisgrey: #f2f2f2;
 
-@primary: #17179b;
-@secondary: #d78c00;
-@black: #000000;
-@radius: 5px;
-@green: #13912a;
-@img: "../img/";
-@breakpoint-mobile: ~"(max-width: 575px)";
+.title() {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+
+  color: #000000;
+
+  margin: 0 0 40px;
+}
+
+.text() {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}

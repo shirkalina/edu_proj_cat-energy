@@ -1,0 +1,71 @@
+// main: ../../style.less
+
+.contacts-form__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+
+  color: #000000;
+
+  width: 182px;
+  margin: 8px 20px 35px;
+
+  position: relative;
+}
+
+.contacts-form__title::after {
+  content: "";
+  width: 99px;
+  height: 2px;
+  background-color: #68b738;
+  right: -118px;
+  top: 15px;
+  position: absolute;
+}
+
+.contacts-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 320px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  margin-bottom: 23px;
+}
+
+.input-contacts__email {
+  width: 219px;
+  height: 45px;
+}
+
+.email-icon {
+  background-image: url(../../../../../img/icons/icon-email.svg);
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 14px;
+  position: absolute;
+  top: 16px;
+  right: 15px;
+
+  z-index: 1;
+}
+
+.input-contacts__phone {
+  width: 204px;
+  height: 45px;
+}
+
+.phone-icon {
+  background-image: url(../../../../../img/icons/icon-phone.svg);
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 21px;
+  position: absolute;
+  top: 13px;
+  right: 12px;
+
+  z-index: 1;
+}

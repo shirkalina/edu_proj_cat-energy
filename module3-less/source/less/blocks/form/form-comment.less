@@ -1,0 +1,55 @@
+// main: ../../style.less
+
+.comment__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+
+  color: #000000;
+
+  width: 182px;
+  margin: 0px 0px 37px;
+
+  position: relative;
+}
+
+.comment__title::after {
+  content: "";
+  width: 158px;
+  height: 2px;
+  background-color: #68b738;
+  right: -118px;
+  top: 15px;
+  position: absolute;
+}
+
+.comment-form {
+  width: 320px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.comment-form textarea {
+  width: 280px;
+  height: 150px;
+  margin: 0 auto 22px;
+
+  outline: none;
+  resize: none;
+
+  border: 1px solid #e7e7e7;
+
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+
+  text-transform: uppercase;
+
+  color: #444444;
+
+  padding: 11px 13px;
+}

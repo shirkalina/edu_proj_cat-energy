@@ -1,0 +1,30 @@
+// main: ../style.less
+
+.page-header {
+  position: relative;
+  width: 320px;
+  min-height: 37px;
+  padding: 10px 20px 17px;
+
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.page-header__logo {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.page-header__logo--text {
+  margin-left: -7px;
+  margin-top: 8px;
+}

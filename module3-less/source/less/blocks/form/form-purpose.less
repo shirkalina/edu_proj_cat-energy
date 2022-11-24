@@ -1,0 +1,56 @@
+// main: ../../style.less
+
+.purpose-form {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #d9d9d9;
+  width: 320px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.purpose__label {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+
+  text-transform: uppercase;
+
+  color: #222222;
+
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.purpose__input {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #cdcdcd;
+}
+
+.purpose__icon {
+  height: 30px;
+  width: 30px;
+  border: 1px solid #cdcdcd;
+  display: inline-block;
+  position: relative;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.purpose__input:checked + .purpose__icon:before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 8px;
+  height: 13px;
+  width: 13px;
+  background-color: #68b738;
+  border-radius: 50%;
+}

@@ -1,0 +1,82 @@
+// main: ../../style.less
+
+.programm-example {
+  background-color: @bacisgrey;
+}
+
+.programm-example__wrapper {
+  margin: 0 20px;
+  height: 700px;
+}
+
+.programm-example__title {
+  .title();
+  padding-top: 25px;
+}
+
+.programm-example__text {
+  .text();
+  border: none;
+}
+
+.stats-wrapper {
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+}
+
+.stats {
+  width: 124px;
+  height: 56px;
+  margin-bottom: 25px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  box-sizing: border-box;
+
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+
+  position: relative;
+}
+
+.stats-num {
+  margin: 17px auto 0;
+}
+
+.stats__text {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  color: #444444;
+  text-transform: lowercase;
+
+  background-color: @bacisgrey;
+  margin: 0;
+  position: absolute;
+  width: 77px;
+  bottom: -20px;
+  left: 22px;
+}
+
+.stats-price {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #000000;
+
+  margin-bottom: 30px;
+}
