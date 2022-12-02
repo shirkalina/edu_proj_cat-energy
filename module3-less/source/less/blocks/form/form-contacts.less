@@ -1,5 +1,25 @@
 // main: ../../style.less
 
+.contacts-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  width: 320px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  margin-bottom: 23px;
+
+  @media (min-width: @tabletwidth) {
+    border-top: 2px solid #68b738;
+    margin-bottom: 50px;
+    padding: 0 65px 20px 70px;
+    width: 100%;
+  }
+}
+
 .contacts-form__title {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -10,9 +30,24 @@
   color: #000000;
 
   width: 182px;
-  margin: 8px 20px 35px;
+  margin: 8px 20px 35px 0;
 
   position: relative;
+
+  @media (min-width: @tabletwidth) {
+    margin-left: 0px;
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 0;
+    margin-bottom: 51px;
+    width: 550px;
+    height: 40px;
+    background-color: #fff;
+    text-align: center;
+
+    top: -24px;
+    left: -22px;
+  }
 }
 
 .contacts-form__title::after {
@@ -23,22 +58,20 @@
   right: -118px;
   top: 15px;
   position: absolute;
-}
 
-.contacts-form {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  width: 320px;
-  padding-right: 20px;
-  padding-left: 20px;
-
-  margin-bottom: 23px;
+  @media (min-width: @tabletwidth) {
+    display: none;
+  }
 }
 
 .input-contacts__email {
-  width: 219px;
+  width: 215px;
   height: 45px;
+
+  @media (min-width: @tabletwidth) {
+    width: 551px;
+    height: 52px;
+  }
 }
 
 .email-icon {
@@ -47,15 +80,25 @@
   width: 20px;
   height: 14px;
   position: absolute;
-  top: 16px;
-  right: 15px;
+  top: 3px;
+  right: -216px;
 
   z-index: 1;
+
+  @media (min-width: @tabletwidth) {
+    top: 10px;
+    right: -543px;
+  }
 }
 
 .input-contacts__phone {
-  width: 204px;
+  width: 195px;
   height: 45px;
+
+  @media (min-width: @tabletwidth) {
+    width: 535px;
+    height: 52px;
+  }
 }
 
 .phone-icon {
@@ -64,8 +107,13 @@
   width: 20px;
   height: 21px;
   position: absolute;
-  top: 13px;
-  right: 12px;
+  top: 2px;
+  right: -200px;
 
   z-index: 1;
+
+  @media (min-width: @tabletwidth) {
+    top: 4px;
+    right: -527px;
+  }
 }

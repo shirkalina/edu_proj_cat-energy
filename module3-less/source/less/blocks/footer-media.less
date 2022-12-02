@@ -9,6 +9,12 @@
   flex-direction: column;
   margin: 0 20px;
   position: relative;
+
+  @media (min-width: @tabletwidth) {
+    flex-direction: row;
+    margin: 0 30px;
+    justify-content: space-between;
+  }
 }
 
 .page-footer__logo__wrapper {
@@ -28,6 +34,10 @@
   &:active {
     opacity: 0.6;
   }
+
+  @media (min-width: @tabletwidth) {
+    left: 0;
+  }
 }
 
 .social__list {
@@ -42,6 +52,10 @@
   margin: 20px auto;
 
   padding: 0;
+
+  @media (min-width: @tabletwidth) {
+    margin-top: 41px;
+  }
 }
 
 .page-footer__copyright {
@@ -53,6 +67,12 @@
   padding-top: 16px;
   margin-bottom: 20px;
   border-top: 1px solid #d9d9d9;
+
+  @media (min-width: @tabletwidth) {
+    justify-content: flex-end;
+    gap: 22px;
+    width: 163px;
+  }
 }
 
 .copyright__link {

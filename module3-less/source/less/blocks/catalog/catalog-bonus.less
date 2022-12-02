@@ -11,6 +11,13 @@
   background-repeat: no-repeat;
   background-size: contain;
   position: relative;
+
+  @media (min-width: @tabletwidth) {
+    width: 707px;
+    height: 200px;
+    margin: 69px 30px 76px;
+    background-image: url(../../../../../img/bonus-tablet.jpg);
+  }
 }
 
 .bonus p {
@@ -24,6 +31,14 @@
   padding-top: 187px;
 
   color: #ffffff;
+
+  @media (min-width: @tabletwidth) {
+    text-align: start;
+    position: relative;
+    top: 74px;
+    left: 417px;
+    padding: 0;
+  }
 }
 
 .bonus::before {

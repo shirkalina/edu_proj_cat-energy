@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="module3-less/source/less/style.css" />
@@ -9,15 +10,8 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a href="#" class="page-header__logo page-header__logo--mobile">
-        <img
-          src="img/logo-mobile.svg"
-          width="33"
-          height="37"
-          alt="Cat Energy"
-        />
-      </a>
-      <a href="#" class="page-header__logo page-header__logo--text">
+      <a href="index.html" class="page-header__logo"> </a>
+      <a href="index.html" class="page-header__logo--text">
         <img src="img/logo-text.svg" width="101" height="18" alt="Cat Energy" />
       </a>
       <nav class="main-nav">
@@ -29,14 +23,14 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="main-nav__item main-nav__item--active">
-              <a href="#">Главная</a>
+            <li class="main-nav__item">
+              <a href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
               <a href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="main-nav__item">
-              <a href="form.html">Подбор программы</a>
+            <li class="main-nav__item main-nav__item--active">
+              <a href="#">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -135,36 +129,41 @@
           </p>
         </form>
         <!-- Контакты владельца -->
-        <h2 class="contacts-form__title">Контактные данные (владельца кота)</h2>
+
         <form
           class="contacts-form"
           action="https://echo.htmlacademy.ru/"
           method="post"
         >
+          <h2 class="contacts-form__title">
+            Контактные данные (владельца кота)
+          </h2>
           <label class="info__label" for="email">
             <span> E-mail:* </span>
-            <input
-              class="input-contacts__email placeholder"
-              type="email"
-              id="email"
-              name="email"
-              placeholder="kuklachev@gmail.com"
-              required
-            />
+
             <span class="email-icon"></span>
           </label>
+          <input
+            class="input-contacts__email placeholder"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="kuklachev@gmail.com"
+            required
+          />
           <label class="info__label" for="phone">
             <span> Телефон:* </span>
-            <input
-              class="input-contacts__phone placeholder"
-              type="tel"
-              id="phone"
-              name="phone"
-              placeholder="8 (960) 900-60-90"
-              required
-            />
+
             <span class="phone-icon"></span>
           </label>
+          <input
+            class="input-contacts__phone placeholder"
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="8 (960) 900-60-90"
+            required
+          />
         </form>
         <!-- Комментарии -->
         <form
@@ -182,65 +181,68 @@
           ></textarea>
         </form>
         <!-- Дополнительныее данные -->
-        <h2 class="additional__title">Дополнительно</h2>
+
         <form
           class="additional-form"
           action="https://echo.htmlacademy.ru/"
           method="post"
         >
-          <p>
-            <label class="additional-label" for="sweetener">
-              <input
-                class="additional__input"
-                type="checkbox"
-                value="sweetener"
-                name="sweetener"
-                id="sweetener"
-                checked
-              />
-              <span class="additional--checkbox"> </span>
-              сахарозаменитель
-            </label>
-          </p>
-          <p>
-            <label class="additional-label" for="drinking-water">
-              <input
-                class="additional__input"
-                type="checkbox"
-                value="drinking-water"
-                name="drinking-water"
-                id="drinking-water"
-              />
-              <span class="additional--checkbox"> </span>
-              питьевая вода
-            </label>
-          </p>
-          <p>
-            <label class="additional-label" for="milk">
-              <input
-                class="additional__input"
-                type="checkbox"
-                value="milk"
-                name="milk"
-                id="milk"
-              />
-              <span class="additional--checkbox"> </span>
-              молоко
-            </label>
-          </p>
-          <p>
-            <label class="additional-label" for="vitamins">
-              <input
-                class="additional__input"
-                type="checkbox"
-                value="vitamins"
-                name="vitamins"
-                id="vitamins"
-              />
-              <span class="additional--checkbox"> </span>
-              витамины
-            </label>
-          </p>
+          <h2 class="additional__title">Дополнительно</h2>
+          <div class="addictional__wrapper">
+            <p>
+              <label class="additional-label" for="sweetener">
+                <input
+                  class="additional__input"
+                  type="checkbox"
+                  value="sweetener"
+                  name="sweetener"
+                  id="sweetener"
+                  checked
+                />
+                <span class="additional--checkbox"> </span>
+                сахарозаменитель
+              </label>
+            </p>
+            <p>
+              <label class="additional-label" for="drinking-water">
+                <input
+                  class="additional__input"
+                  type="checkbox"
+                  value="drinking-water"
+                  name="drinking-water"
+                  id="drinking-water"
+                />
+                <span class="additional--checkbox"> </span>
+                питьевая вода
+              </label>
+            </p>
+            <p>
+              <label class="additional-label" for="milk">
+                <input
+                  class="additional__input"
+                  type="checkbox"
+                  value="milk"
+                  name="milk"
+                  id="milk"
+                />
+                <span class="additional--checkbox"> </span>
+                молоко
+              </label>
+            </p>
+            <p>
+              <label class="additional-label" for="vitamins">
+                <input
+                  class="additional__input"
+                  type="checkbox"
+                  value="vitamins"
+                  name="vitamins"
+                  id="vitamins"
+                />
+                <span class="additional--checkbox"> </span>
+                витамины
+              </label>
+            </p>
+          </div>
         </form>
         <div class="sent-form__button">
           <button class="button catalog-button" type="button">
@@ -267,7 +269,7 @@
       <div class="page-footer-media">
         <div class="page-footer__wrapper">
           <div class="page-footer__logo__wrapper">
-            <a href="#" class="page-footer__logo">
+            <a href="index.html" class="page-footer__logo">
               <img
                 src="img/logo-text.svg"
                 width="128"

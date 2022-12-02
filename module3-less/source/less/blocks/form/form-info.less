@@ -12,10 +12,21 @@
   align-items: center;
 
   padding-bottom: 27px;
+
+  @media (min-width: @tabletwidth) {
+    width: @tabletwidth;
+    padding: 0 70px 72px;
+    border: none;
+  }
 }
 
 .info__label {
   position: relative;
+
+  @media (min-width: @tabletwidth) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .info__label span {
@@ -33,16 +44,27 @@
 .info__name {
   min-width: 228px;
   height: 45px;
+
+  @media (min-width: @tabletwidth) {
+    width: 567px;
+  }
 }
 
 .info__weight {
   min-width: 204px;
   height: 45px;
+
+  @media (min-width: @tabletwidth) {
+    width: 536px;
+  }
 }
 
 .info__text {
   min-width: 172px;
   height: 45px;
+  @media (min-width: @tabletwidth) {
+    width: 497px;
+  }
 }
 
 .placeholder {
@@ -57,4 +79,9 @@
   color: #444444;
 
   padding-left: 15px;
+
+  @media (min-width: @tabletwidth) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

@@ -4,6 +4,13 @@
   .title();
 
   margin: 21px 20px 37px;
+
+  @media (min-width: @tabletwidth) {
+    margin: 48px 70px 54px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .page__text {
@@ -18,9 +25,17 @@
   color: #000000;
 
   margin: 0 20px 39px;
+
+  @media (min-width: @tabletwidth) {
+    margin: 0 70px 66px;
+  }
 }
 
 .form-section {
   width: 320px;
   margin: 0 auto;
+
+  @media (min-width: @tabletwidth) {
+    width: @tabletwidth;
+  }
 }

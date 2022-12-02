@@ -1,5 +1,16 @@
 // main: ../../style.less
 
+@media (min-width: @tabletwidth) {
+  .before-after__wrapper {
+    background-color: @bacisgrey;
+    margin-top: 200px;
+    height: 462px;
+
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 .before-after__images {
   width: 280px;
   height: 232px;
@@ -9,14 +20,28 @@
 .before-img {
   position: absolute;
 
-  // display: none;
+  display: none;
+
+  @media (min-width: @tabletwidth) {
+    width: 592px;
+    height: 511px;
+    top: -180px;
+    left: 110px;
+  }
 }
 
 .after-img {
   position: absolute;
   left: 10%;
 
-  display: none;
+  // display: none;
+
+  @media (min-width: @tabletwidth) {
+    width: 592px;
+    height: 511px;
+    top: -180px;
+    left: 100px;
+  }
 }
 
 .before-after__range {
@@ -24,6 +49,14 @@
   width: 210px;
   margin: 30px auto 0;
   justify-content: space-between;
+
+  @media (min-width: @tabletwidth) {
+    position: relative;
+    bottom: -130px;
+    width: 592px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .before-after__progress {
@@ -35,6 +68,13 @@
   border-radius: 6px;
   align-self: center;
   cursor: pointer;
+
+  @media (min-width: @tabletwidth) {
+    width: 426px;
+    height: 6px;
+    background: #dcdcdc;
+    border: none;
+  }
 }
 
 .before-after__tog {
@@ -47,4 +87,26 @@
   left: 7px;
   // ИЛИ
   // right: 7px;
+
+  @media (min-width: @tabletwidth) {
+    width: 34px;
+    height: 34px;
+    background: #fff;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    top: -14px;
+    left: 194px;
+  }
+}
+
+@media (min-width: @tabletwidth) {
+  .before-after__tog-min {
+    width: 8px;
+    height: 8px;
+    background: #68b738;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 4px);
+    left: calc(50% - 4px);
+  }
 }

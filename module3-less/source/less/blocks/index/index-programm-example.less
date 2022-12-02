@@ -2,27 +2,64 @@
 
 .programm-example {
   background-color: @bacisgrey;
+
+  @media (min-width: @tabletwidth) {
+    background-color: white;
+  }
 }
 
 .programm-example__wrapper {
   margin: 0 20px;
   height: 700px;
+
+  @media (min-width: @tabletwidth) {
+    margin: 0;
+    height: 1000px;
+  }
 }
 
 .programm-example__title {
   .title();
   padding-top: 25px;
+
+  @media (min-width: @tabletwidth) {
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 43px;
+    margin-bottom: 63px;
+    margin-left: 30px;
+  }
 }
 
 .programm-example__text {
   .text();
   border: none;
+
+  @media (min-width: @tabletwidth) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
 }
 
 .stats-wrapper {
   display: flex;
   gap: 32px;
   justify-content: space-between;
+
+  @media (min-width: @tabletwidth) {
+    justify-content: flex-start;
+    gap: 42px;
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: @tabletwidth) {
+  .stats__elements {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .stats {
@@ -43,6 +80,13 @@
   color: #000000;
 
   position: relative;
+
+  @media (min-width: @tabletwidth) {
+    width: 162px;
+    height: 77px;
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .stats-num {
@@ -64,6 +108,15 @@
   width: 77px;
   bottom: -20px;
   left: 22px;
+
+  @media (min-width: @tabletwidth) {
+    font-size: 14px;
+    line-height: 14px;
+    background-color: white;
+    width: 130px;
+    bottom: -6px;
+    left: 16px;
+  }
 }
 
 .stats-price {
@@ -79,4 +132,13 @@
   color: #000000;
 
   margin-bottom: 30px;
+
+  @media (min-width: @tabletwidth) {
+    width: 175px;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: end;
+    margin-top: 15px;
+    margin-right: 30px;
+  }
 }

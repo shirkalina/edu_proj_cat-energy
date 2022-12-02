@@ -8,6 +8,11 @@
   background: url(../../../../img/index-bg.png) no-repeat;
   width: 320px;
   border-color: #68b738;
+
+  @media (min-width: @tabletwidth) {
+    background: none;
+    width: @tabletwidth;
+  }
 }
 
 .page-main__wrapper {
@@ -15,6 +20,12 @@
   margin: 0px 20px;
   color: #ffffff;
   position: relative;
+
+  @media (min-width: @tabletwidth) {
+    min-height: 810px;
+    color: #000000;
+    margin: 0 117px;
+  }
 }
 
 .page-main__title {
@@ -27,6 +38,15 @@
   margin: 0;
   padding-top: 23px;
   padding-bottom: 25px;
+
+  @media (min-width: @tabletwidth) {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    padding-top: 45px;
+    padding-bottom: 41px;
+  }
 }
 
 .page-main__wrapper p {
@@ -39,13 +59,29 @@
   text-align: center;
   margin: 0;
   padding-bottom: 29px;
+
+  @media (min-width: @tabletwidth) {
+    text-align: left;
+  }
 }
 
 .background-photo {
+  background-image: url(../../../../../img/cat-energy-bg.png);
+  width: 300px;
+  height: 270px;
+  background-repeat: no-repeat;
+  background-size: contain;
   z-index: 1;
   position: absolute;
   top: 163px;
   left: -20px;
+
+  @media (min-width: @tabletwidth) {
+    width: 709px;
+    height: 609px;
+    top: 230px;
+    left: -105px;
+  }
 }
 
 .btn-index-main {
@@ -53,4 +89,9 @@
   bottom: 0;
 
   margin-bottom: 6px;
+
+  @media (min-width: @tabletwidth) {
+    z-index: 3;
+    top: 257px;
+  }
 }

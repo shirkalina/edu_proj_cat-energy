@@ -1,5 +1,20 @@
 // main: ../../style.less
 
+.additional-form {
+  width: 320px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 34px;
+
+  @media (min-width: @tabletwidth) {
+    border-top: 2px solid #68b738;
+
+    padding: 0 65px 0px 70px;
+    margin-bottom: 54px;
+    width: 100%;
+  }
+}
+
 .additional__title {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -13,6 +28,21 @@
   margin: -2px 20px 38px;
 
   position: relative;
+
+  @media (min-width: @tabletwidth) {
+    margin-left: 0px;
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 0;
+    margin-bottom: 33px;
+    width: 258px;
+    height: 40px;
+    background-color: #fff;
+    text-align: center;
+
+    top: -24px;
+    left: -27px;
+  }
 }
 
 .additional__title::after {
@@ -23,13 +53,24 @@
   right: -120px;
   top: 15px;
   position: absolute;
+
+  @media (min-width: @tabletwidth) {
+    display: none;
+  }
 }
 
-.additional-form {
-  width: 320px;
-  padding-right: 20px;
-  padding-left: 20px;
-  margin-bottom: 34px;
+@media (min-width: @tabletwidth) {
+  .addictional__wrapper {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 220px 220px;
+    column-gap: 124px;
+    row-gap: 32px;
+  }
+
+  .addictional__wrapper p {
+    margin: 0;
+  }
 }
 
 .additional-label {
@@ -49,6 +90,11 @@
 
   margin-top: 16px;
   margin-left: 3px;
+
+  @media (min-width: @tabletwidth) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .additional__input {
@@ -65,18 +111,29 @@
 
   margin-right: 16px;
   cursor: pointer;
+
+  @media (min-width: @tabletwidth) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .additional__input:checked + .additional--checkbox:before {
   content: "";
   background-image: url(../../../../../img/icons/icon-checkbox.svg);
+  background-repeat: no-repeat;
   position: absolute;
   top: 4px;
   left: 4px;
   height: 14px;
   width: 18px;
 
-  border-radius: 50%;
+  @media (min-width: @tabletwidth) {
+    width: 24px;
+    height: 19px;
+    top: 10px;
+    left: 10px;
+  }
 }
 
 .form-section__text {
@@ -91,10 +148,22 @@
   color: #000000;
 
   margin: 21px auto 32px;
+
+  @media (min-width: @tabletwidth) {
+    margin-bottom: 93px;
+  }
 }
 
 .sent-form__button {
   width: 320px;
   padding-right: 20px;
   padding-left: 20px;
+
+  @media (min-width: @tabletwidth) {
+    width: 605px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 65px;
+    gap: 90px;
+  }
 }
