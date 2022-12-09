@@ -45,89 +45,91 @@
       </p>
 
       <section class="form-section">
-        <!-- Информация о коте -->
-        <form
-          class="info-form"
-          action="https://echo.htmlacademy.ru/"
-          method="post"
-        >
-          <label class="info__label" for="name"> <span> имя:* </span> </label>
-          <input
-            class="info__name placeholder"
-            type="text"
-            placeholder="Барсик"
-            id="name"
-            required
-          />
+        <div class="form-info--wrapper">
+          <!-- Информация о коте -->
+          <form
+            class="info-form"
+            action="https://echo.htmlacademy.ru/"
+            method="post"
+          >
+            <label class="info__label" for="name"> <span> имя:* </span> </label>
+            <input
+              class="info__name placeholder"
+              type="text"
+              placeholder="Барсик"
+              id="name"
+              required
+            />
 
-          <label class="info__label" for="weight">
-            <span> вес:* (кг) </span>
-          </label>
-          <input
-            class="info__weight placeholder"
-            type="text"
-            placeholder="7"
-            id="weight"
-            required
-          />
+            <label class="info__label" for="weight">
+              <span> вес:* (кг) </span>
+            </label>
+            <input
+              class="info__weight placeholder"
+              type="text"
+              placeholder="7"
+              id="weight"
+              required
+            />
 
-          <label class="info__label" for="age">
-            <span> возраст (лет): </span>
-          </label>
-          <input
-            class="info__text placeholder"
-            type="text"
-            id="age"
-            placeholder="7"
-          />
-        </form>
-        <!-- Цель -->
-        <form
-          class="purpose-form"
-          action="https://echo.htmlacademy.ru/"
-          method="post"
-        >
-          <p>
-            <label class="purpose__label" for="slim">
-              <input
-                class="purpose__input visually-hidden"
-                type="radio"
-                value="slim"
-                name="purpose"
-                id="slim"
-                checked
-              />
-              <span class="purpose__icon"></span>
-              Похудение</label
-            >
-          </p>
-          <p>
-            <label class="purpose__label" for="pro">
-              <input
-                class="purpose__input visually-hidden"
-                type="radio"
-                value="pro"
-                name="purpose"
-                id="pro"
-              />
-              <span class="purpose__icon"></span>
-              Набор массы</label
-            >
-          </p>
-          <p>
-            <label class="purpose__label" for="not-khow">
-              <input
-                class="purpose__input visually-hidden"
-                type="radio"
-                value="not-khow"
-                name="purpose"
-                id="not-khow"
-              />
-              <span class="purpose__icon"></span>
-              Не знаю (Нужен ваш совет)</label
-            >
-          </p>
-        </form>
+            <label class="info__label" for="age">
+              <span> возраст (лет): </span>
+            </label>
+            <input
+              class="info__text placeholder"
+              type="text"
+              id="age"
+              placeholder="7"
+            />
+          </form>
+          <!-- Цель -->
+          <form
+            class="purpose-form"
+            action="https://echo.htmlacademy.ru/"
+            method="post"
+          >
+            <p>
+              <label class="purpose__label" for="slim">
+                <input
+                  class="purpose__input visually-hidden"
+                  type="radio"
+                  value="slim"
+                  name="purpose"
+                  id="slim"
+                  checked
+                />
+                <span class="purpose__icon"></span>
+                Похудение</label
+              >
+            </p>
+            <p>
+              <label class="purpose__label" for="pro">
+                <input
+                  class="purpose__input visually-hidden"
+                  type="radio"
+                  value="pro"
+                  name="purpose"
+                  id="pro"
+                />
+                <span class="purpose__icon"></span>
+                Набор массы</label
+              >
+            </p>
+            <p>
+              <label class="purpose__label" for="not-khow">
+                <input
+                  class="purpose__input visually-hidden"
+                  type="radio"
+                  value="not-khow"
+                  name="purpose"
+                  id="not-khow"
+                />
+                <span class="purpose__icon"></span>
+                Не знаю (Нужен ваш совет)</label
+              >
+            </p>
+          </form>
+        </div>
         <!-- Контакты владельца -->
 
         <form
@@ -245,7 +247,7 @@
           </div>
         </form>
         <div class="sent-form__button">
-          <button class="button catalog-button" type="button">
+          <button class="button form-button" type="button">
             отправить заявку
           </button>
           <p class="form-section__text">* — Обязательные поля</p>
