@@ -5,13 +5,35 @@
 }
 
 .page-main__header {
-  background: url(../../../../img/index-bg.png) no-repeat;
+  background: url(../../../../img/index-bg-mobile.png) no-repeat;
   width: 320px;
   border-color: #68b738;
 
   @media (min-width: @tabletwidth) {
     background: none;
     width: @tabletwidth;
+  }
+
+  @media (min-width: @desktopwidth) {
+    width: @desktopwidth;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    height: 547px;
+    margin-bottom: 82px;
+  }
+}
+
+@media (min-width: @desktopwidth) {
+  .bg-desktop {
+    background-image: url(../../../../../img/index-background-desktop\ 1.png);
+    background-repeat: no-repeat;
+    width: 720px;
+    height: 694px;
+    position: relative;
+    top: -147px;
+    z-index: 0;
   }
 }
 
@@ -47,6 +69,10 @@
     padding-top: 45px;
     padding-bottom: 41px;
   }
+
+  @media (min-width: @desktopwidth) {
+    padding-left: 70px;
+  }
 }
 
 .page-main__wrapper p {
@@ -62,6 +88,12 @@
 
   @media (min-width: @tabletwidth) {
     text-align: left;
+  }
+
+  @media (min-width: @desktopwidth) {
+    padding-left: 70px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
@@ -82,6 +114,13 @@
     top: 230px;
     left: -105px;
   }
+
+  @media (min-width: @desktopwidth) {
+    width: 552px;
+    height: 499px;
+    top: 0px;
+    left: 442px;
+  }
 }
 
 .btn-index-main {
@@ -93,5 +132,10 @@
   @media (min-width: @tabletwidth) {
     z-index: 3;
     top: 257px;
+  }
+
+  @media (min-width: @desktopwidth) {
+    top: 265px;
+    left: 70px;
   }
 }

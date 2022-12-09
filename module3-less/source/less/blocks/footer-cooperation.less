@@ -1,6 +1,12 @@
 // main: ../style.less
 
-.page-footer__cooperation-info {
+@media (min-width: @desktopwidth) {
+  .page-footer__cooperation-info {
+    position: absolute;
+  }
+}
+
+.cooperation-info__wrapper {
   display: flex;
   margin: 0px 20px;
   justify-content: space-between;
@@ -8,6 +14,17 @@
   @media (min-width: @tabletwidth) {
     margin: 0px 70px;
     padding: 56px 0;
+  }
+
+  @media (min-width: @desktopwidth) {
+    width: 565px;
+    height: 198px;
+    background-color: #fff;
+    padding: 40px 80px;
+
+    position: relative;
+    top: 95px;
+    left: 37px;
   }
 }
 
@@ -29,6 +46,10 @@
     font-size: 20px;
     line-height: 26px;
   }
+
+  @media (min-width: @desktopwidth) {
+    width: 163px;
+  }
 }
 
 .cooperation-info__address {
@@ -47,6 +68,10 @@
     font-size: 16px;
     line-height: 20px;
     text-align: end;
+  }
+
+  @media (min-width: @desktopwidth) {
+    width: 155px;
   }
 }
 

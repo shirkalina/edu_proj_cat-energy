@@ -18,6 +18,13 @@
     justify-content: flex-start;
     border: none;
   }
+
+  @media (min-width: @desktopwidth) {
+    width: @desktopwidth;
+    flex-wrap: wrap;
+    padding: 53px 110px 32px;
+    z-index: 2;
+  }
 }
 
 .page-header__logo {
@@ -41,6 +48,13 @@
     background-image: url(../../../../img/logo-tablet.svg);
     margin-right: 13px;
   }
+
+  @media (min-width: @desktopwidth) {
+    width: 70px;
+    height: 59px;
+    background-image: url(../../../../img/logo-desktop.svg);
+    margin-right: 14px;
+  }
 }
 
 .page-header__logo--text {
@@ -50,6 +64,7 @@
   @media (min-width: @tabletwidth) {
     align-self: center;
   }
+
   &:hover {
     opacity: 0.8;
   }
