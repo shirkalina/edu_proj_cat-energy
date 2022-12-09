@@ -18,6 +18,19 @@
     margin: 69px 30px 76px;
     background-image: url(../../../../../img/bonus-tablet.jpg);
   }
+
+  @media (min-width: @desktopwidth) {
+    width: 245px;
+    height: 288px;
+    background-image: url(../../../../../img/bonus-desktop.jpg);
+    background-color: #68b738;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    position: relative;
+    top: 24px;
+    margin: 0;
+  }
 }
 
 .bonus p {
@@ -39,6 +52,13 @@
     left: 417px;
     padding: 0;
   }
+
+  @media (min-width: @desktopwidth) {
+    margin: 0;
+    top: 184px;
+    left: 0px;
+    text-align: center;
+  }
 }
 
 .bonus::before {
@@ -51,4 +71,9 @@
   height: 80px;
   top: 58px;
   left: 101px;
+
+  @media (min-width: @desktopwidth) {
+    left: 83px;
+    top: 55px;
+  }
 }

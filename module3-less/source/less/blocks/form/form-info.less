@@ -1,5 +1,13 @@
 // main: ../../style.less
 
+@media (min-width: @desktopwidth) {
+  .form-info--wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 80px;
+  }
+}
+
 .info-form {
   border-bottom: 1px solid #d9d9d9;
   display: flex;
@@ -17,6 +25,13 @@
     width: @tabletwidth;
     padding: 0 70px 72px;
     border: none;
+  }
+
+  @media (min-width: @desktopwidth) {
+    padding-left: 110px;
+    padding-right: 0;
+    width: 680px;
+    row-gap: 20px;
   }
 }
 
@@ -39,6 +54,11 @@
   text-transform: uppercase;
 
   color: #444444;
+
+  @media (min-width: @desktopwidth) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .info__name {
@@ -47,6 +67,11 @@
 
   @media (min-width: @tabletwidth) {
     width: 567px;
+  }
+
+  @media (min-width: @desktopwidth) {
+    width: 506px;
+    height: 52px;
   }
 }
 
@@ -57,13 +82,24 @@
   @media (min-width: @tabletwidth) {
     width: 536px;
   }
+
+  @media (min-width: @desktopwidth) {
+    width: 475px;
+    height: 52px;
+  }
 }
 
 .info__text {
   min-width: 172px;
   height: 45px;
+
   @media (min-width: @tabletwidth) {
     width: 497px;
+  }
+
+  @media (min-width: @desktopwidth) {
+    width: 436px;
+    height: 52px;
   }
 }
 

@@ -159,12 +159,12 @@ a {
   }
 }
 @media (min-width: 768px) and (min-width: 1440px) {
-  .main-nav__item a {
+  .index-desktop--link a {
     color: #fff;
   }
 }
 @media (min-width: 1440px) {
-  .main-nav__item--active {
+  .main-nav-index__item--active {
     border-bottom: 2px solid #fff;
   }
 }
@@ -374,9 +374,36 @@ a {
     margin: 0 auto;
   }
 }
+@media (min-width: 1440px) {
+  .catalog-button {
+    width: 169px;
+    height: 40px;
+  }
+}
+.form-button {
+  font-size: 16px;
+  line-height: 20px;
+}
+@media (min-width: 768px) {
+  .form-button {
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1440px) {
+  .form-button {
+    width: 568px;
+    height: 52px;
+  }
+}
 @media (min-width: 768px) {
   .additional-catalog-button {
     width: 100%;
+    height: 40px;
+  }
+}
+@media (min-width: 1440px) {
+  .additional-catalog-button {
+    width: 244px;
     height: 40px;
   }
 }
@@ -1344,6 +1371,11 @@ a {
     line-height: 60px;
   }
 }
+@media (min-width: 1440px) {
+  .catalog-page__title {
+    margin-left: 110px;
+  }
+}
 .catalog__wrapper {
   width: 320px;
   margin: 0 auto;
@@ -1352,6 +1384,12 @@ a {
   .catalog__wrapper {
     width: 768px;
     margin: 0 30px;
+  }
+}
+@media (min-width: 1440px) {
+  .catalog__wrapper {
+    width: 1440px;
+    margin: 0 110px;
   }
 }
 .catalog__list {
@@ -1364,6 +1402,12 @@ a {
   .catalog__list {
     row-gap: 141px;
     column-gap: 60px;
+  }
+}
+@media (min-width: 1440px) {
+  .catalog__list {
+    width: 1440px;
+    column-gap: 80px;
   }
 }
 .catalog__item {
@@ -1387,6 +1431,11 @@ a {
     grid-template-columns: 1fr;
     grid-template-rows: 161px 47px 147px;
     row-gap: 0;
+  }
+}
+@media (min-width: 1440px) {
+  .catalog__item {
+    width: 245px;
   }
 }
 .catalog__item img {
@@ -1463,6 +1512,11 @@ a {
     padding-top: 5px;
     padding-bottom: 9px;
     border-bottom: 1px solid #cdcdcd;
+  }
+}
+@media (min-width: 1440px) {
+  .product__item {
+    width: 166px;
   }
 }
 .show-more__item {
@@ -1555,6 +1609,16 @@ a {
     margin: 0 auto 87px;
   }
 }
+@media (min-width: 1440px) {
+  .catalog-sections--wrapper {
+    display: flex;
+    align-items: center;
+    gap: 79px;
+    margin-bottom: 86px;
+    border-top: 2px solid #68b738;
+    margin-top: 100px;
+  }
+}
 .additional-goods-catalog {
   position: relative;
 }
@@ -1562,6 +1626,12 @@ a {
   .additional-goods-catalog {
     border-top: 2px solid #68b738;
     margin-top: 75px;
+  }
+}
+@media (min-width: 1440px) {
+  .additional-goods-catalog {
+    border: none;
+    margin-top: -10px;
   }
 }
 .additional-goods-catalog__title {
@@ -1586,6 +1656,11 @@ a {
     position: relative;
     top: -16px;
     left: 10px;
+  }
+}
+@media (min-width: 1440px) {
+  .additional-goods-catalog__title {
+    margin-left: 57px;
   }
 }
 .additional-goods-catalog__title::after {
@@ -1613,6 +1688,13 @@ a {
     padding: 0 30px;
   }
 }
+@media (min-width: 1440px) {
+  .additional-catalog__wrapper {
+    width: 896px;
+    padding: 0;
+    margin-left: 110px;
+  }
+}
 .additional-catalog__list {
   list-style-type: none;
   padding: 0;
@@ -1636,6 +1718,16 @@ a {
     justify-content: space-between;
   }
 }
+@media (min-width: 1440px) {
+  .additional-catalog__item {
+    height: 72px;
+    border-left: none;
+    border-right: none;
+    padding: 0;
+    align-items: center;
+    gap: 38px;
+  }
+}
 .additional-catalog__title {
   margin: 13px 4px;
   font-family: "Oswald", sans-serif;
@@ -1651,6 +1743,12 @@ a {
     margin: 0 0 25px;
     font-size: 20px;
     line-height: 20px;
+  }
+}
+@media (min-width: 1440px) {
+  .additional-catalog__title {
+    margin: 0;
+    margin-right: auto;
   }
 }
 .additional-catalog__characteristics {
@@ -1671,6 +1769,11 @@ a {
     line-height: 20px;
   }
 }
+@media (min-width: 1440px) {
+  .additional-catalog__characteristics {
+    width: 288px;
+  }
+}
 .bonus {
   width: 279px;
   height: 289px;
@@ -1687,6 +1790,19 @@ a {
     height: 200px;
     margin: 69px 30px 76px;
     background-image: url(../../../../../img/bonus-tablet.jpg);
+  }
+}
+@media (min-width: 1440px) {
+  .bonus {
+    width: 245px;
+    height: 288px;
+    background-image: url(../../../../../img/bonus-desktop.jpg);
+    background-color: #68b738;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    top: 24px;
+    margin: 0;
   }
 }
 .bonus p {
@@ -1708,6 +1824,14 @@ a {
     padding: 0;
   }
 }
+@media (min-width: 1440px) {
+  .bonus p {
+    margin: 0;
+    top: 184px;
+    left: 0px;
+    text-align: center;
+  }
+}
 .bonus::before {
   content: "";
   position: absolute;
@@ -1718,6 +1842,12 @@ a {
   height: 80px;
   top: 58px;
   left: 101px;
+}
+@media (min-width: 1440px) {
+  .bonus::before {
+    left: 83px;
+    top: 55px;
+  }
 }
 .page__title {
   font-family: inherit;
@@ -1736,6 +1866,11 @@ a {
     line-height: 60px;
   }
 }
+@media (min-width: 1440px) {
+  .page__title {
+    margin-left: 110px;
+  }
+}
 .page__text {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -1751,6 +1886,13 @@ a {
     margin: 0 70px 66px;
   }
 }
+@media (min-width: 1440px) {
+  .page__text {
+    line-height: 30px;
+    font-size: 20px;
+    margin-left: 110px;
+  }
+}
 .form-section {
   width: 320px;
   margin: 0 auto;
@@ -1758,6 +1900,18 @@ a {
 @media (min-width: 768px) {
   .form-section {
     width: 768px;
+  }
+}
+@media (min-width: 1440px) {
+  .form-section {
+    width: 1440px;
+  }
+}
+@media (min-width: 1440px) {
+  .form-info--wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 80px;
   }
 }
 .info-form {
@@ -1779,6 +1933,14 @@ a {
     border: none;
   }
 }
+@media (min-width: 1440px) {
+  .info-form {
+    padding-left: 110px;
+    padding-right: 0;
+    width: 680px;
+    row-gap: 20px;
+  }
+}
 .info__label {
   position: relative;
 }
@@ -1797,6 +1959,12 @@ a {
   text-transform: uppercase;
   color: #444444;
 }
+@media (min-width: 1440px) {
+  .info__label span {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
 .info__name {
   min-width: 228px;
   height: 45px;
@@ -1804,6 +1972,12 @@ a {
 @media (min-width: 768px) {
   .info__name {
     width: 567px;
+  }
+}
+@media (min-width: 1440px) {
+  .info__name {
+    width: 506px;
+    height: 52px;
   }
 }
 .info__weight {
@@ -1815,6 +1989,12 @@ a {
     width: 536px;
   }
 }
+@media (min-width: 1440px) {
+  .info__weight {
+    width: 475px;
+    height: 52px;
+  }
+}
 .info__text {
   min-width: 172px;
   height: 45px;
@@ -1822,6 +2002,12 @@ a {
 @media (min-width: 768px) {
   .info__text {
     width: 497px;
+  }
+}
+@media (min-width: 1440px) {
+  .info__text {
+    width: 436px;
+    height: 52px;
   }
 }
 .placeholder {
@@ -1856,6 +2042,12 @@ a {
     width: 628px;
     height: 200px;
     padding: 25px 28px;
+  }
+}
+@media (min-width: 1440px) {
+  .purpose-form {
+    margin: 0;
+    width: 568px;
   }
 }
 @media (min-width: 768px) {
@@ -1923,11 +2115,6 @@ a {
   }
 }
 .contacts-form {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 14px;
   width: 320px;
   padding-right: 20px;
   padding-left: 20px;
@@ -1939,6 +2126,12 @@ a {
     margin-bottom: 50px;
     padding: 0 65px 20px 70px;
     width: 100%;
+  }
+}
+@media (min-width: 1440px) {
+  .contacts-form {
+    display: block;
+    padding-left: 110px;
   }
 }
 .contacts-form__title {
@@ -1984,11 +2177,20 @@ a {
 .input-contacts__email {
   width: 215px;
   height: 45px;
+  margin-bottom: 14px;
 }
 @media (min-width: 768px) {
   .input-contacts__email {
     width: 551px;
     height: 52px;
+  }
+}
+@media (min-width: 1440px) {
+  .input-contacts__email {
+    width: 486px;
+    height: 50px;
+    margin-right: 78px;
+    margin-left: 20px;
   }
 }
 .email-icon {
@@ -1998,13 +2200,19 @@ a {
   height: 14px;
   position: absolute;
   top: 3px;
-  right: -216px;
+  right: -204px;
   z-index: 1;
 }
 @media (min-width: 768px) {
   .email-icon {
     top: 10px;
     right: -543px;
+  }
+}
+@media (min-width: 1440px) {
+  .email-icon {
+    top: 10px;
+    right: -486px;
   }
 }
 .input-contacts__phone {
@@ -2017,6 +2225,13 @@ a {
     height: 52px;
   }
 }
+@media (min-width: 1440px) {
+  .input-contacts__phone {
+    width: 472px;
+    height: 50px;
+    margin-left: 15px;
+  }
+}
 .phone-icon {
   background-image: url(../../../../../img/icons/icon-phone.svg);
   background-repeat: no-repeat;
@@ -2024,13 +2239,19 @@ a {
   height: 21px;
   position: absolute;
   top: 2px;
-  right: -200px;
+  right: -190px;
   z-index: 1;
 }
 @media (min-width: 768px) {
   .phone-icon {
     top: 4px;
     right: -527px;
+  }
+}
+@media (min-width: 1440px) {
+  .phone-icon {
+    top: 4px;
+    right: -479px;
   }
 }
 .comment-form {
@@ -2044,6 +2265,11 @@ a {
     padding: 0 65px 0px 70px;
     margin-bottom: 89px;
     width: 100%;
+  }
+}
+@media (min-width: 1440px) {
+  .comment-form {
+    padding-left: 110px;
   }
 }
 .comment__title {
@@ -2108,6 +2334,14 @@ a {
     height: 174px;
   }
 }
+@media (min-width: 1440px) {
+  .comment-form textarea {
+    font-size: 20px;
+    line-height: 30px;
+    width: 1220px;
+    height: 174px;
+  }
+}
 .additional-form {
   width: 320px;
   padding-right: 20px;
@@ -2122,6 +2356,11 @@ a {
     width: 100%;
   }
 }
+@media (min-width: 1440px) {
+  .additional-form {
+    padding-left: 110px;
+  }
+}
 .additional__title {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -2130,7 +2369,7 @@ a {
   line-height: 26px;
   color: #000000;
   width: 182px;
-  margin: -2px 20px 38px;
+  margin: -2px 0px 38px;
   position: relative;
 }
 @media (min-width: 768px) {
@@ -2172,6 +2411,14 @@ a {
   }
   .addictional__wrapper p {
     margin: 0;
+  }
+}
+@media (min-width: 768px) and (min-width: 1440px) {
+  .addictional__wrapper {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 104px;
   }
 }
 .additional-label {
@@ -2246,6 +2493,11 @@ a {
     margin-bottom: 93px;
   }
 }
+@media (min-width: 1440px) {
+  .form-section__text {
+    width: 180px;
+  }
+}
 .sent-form__button {
   width: 320px;
   padding-right: 20px;
@@ -2258,6 +2510,11 @@ a {
     justify-content: space-between;
     padding-left: 65px;
     gap: 90px;
+  }
+}
+@media (min-width: 1440px) {
+  .sent-form__button {
+    width: 835px;
   }
 }
 /*# sourceMappingURL=./style.css.map */

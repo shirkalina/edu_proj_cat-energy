@@ -13,6 +13,10 @@
     margin-bottom: 54px;
     width: 100%;
   }
+
+  @media (min-width: @desktopwidth) {
+    padding-left: 110px;
+  }
 }
 
 .additional__title {
@@ -25,7 +29,7 @@
   color: #000000;
 
   width: 182px;
-  margin: -2px 20px 38px;
+  margin: -2px 0px 38px;
 
   position: relative;
 
@@ -66,6 +70,15 @@
     grid-template-columns: 220px 220px;
     column-gap: 124px;
     row-gap: 32px;
+  }
+
+  @media (min-width: @desktopwidth) {
+    .addictional__wrapper {
+      margin: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      column-gap: 104px;
+    }
   }
 
   .addictional__wrapper p {
@@ -152,6 +165,10 @@
   @media (min-width: @tabletwidth) {
     margin-bottom: 93px;
   }
+
+  @media (min-width: @desktopwidth) {
+    width: 180px;
+  }
 }
 
 .sent-form__button {
@@ -165,5 +182,9 @@
     justify-content: space-between;
     padding-left: 65px;
     gap: 90px;
+  }
+
+  @media (min-width: @desktopwidth) {
+    width: 835px;
   }
 }
