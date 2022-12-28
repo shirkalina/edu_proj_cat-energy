@@ -9,6 +9,11 @@
   width: 320px;
   border-color: #68b738;
 
+  @media (min-resolution: 2dppx) {
+    background: url(../../../../img/index-bg-mobile@2x.png) no-repeat;
+    background-size: contain;
+  }
+
   @media (min-width: @tabletwidth) {
     background: none;
     width: @tabletwidth;
@@ -34,6 +39,11 @@
     position: relative;
     top: -147px;
     z-index: 0;
+
+    @media (min-resolution: 2dppx) {
+      background: url(../../../../img/index-background-desktop@2x.png) no-repeat;
+      background-size: contain;
+    }
   }
 }
 

@@ -12,11 +12,19 @@
   background-size: contain;
   position: relative;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url(../../../../../img/bonus-mobile@2x.jpg);
+  }
+
   @media (min-width: @tabletwidth) {
     width: 707px;
     height: 200px;
     margin: 69px 30px 76px;
     background-image: url(../../../../../img/bonus-tablet.jpg);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../../../../../img/bonus-tablet@2x.jpg);
+    }
   }
 
   @media (min-width: @desktopwidth) {
@@ -30,6 +38,10 @@
     position: relative;
     top: 24px;
     margin: 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../../../../../img/bonus-desktop@2x.jpg);
+    }
   }
 }
 

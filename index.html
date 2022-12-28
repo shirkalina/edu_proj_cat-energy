@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="module3-less/source/less/style.css" />
+    <link rel="icon" href="32.ico" />
     <title>Cat Energy</title>
   </head>
   <body class="page__body">
@@ -41,6 +42,7 @@
       </nav>
     </header>
 
+    <!-- скрипт по открытию меню в мобильной версии -->
     <script>
       var navMain = document.querySelector(".main-nav__wrapper");
       var navToggle = document.querySelector(".main-nav__toogle");
@@ -170,20 +172,27 @@
           </div>
           <div class="before-after__wrapper">
             <div class="before-after__images">
-              <img
-                class="before-img img-active"
-                src="img/cat-fat.png"
-                width="280"
-                height="232"
-                alt="Фото кота до."
-              />
-              <img
-                class="after-img"
-                src="img/cat-skinny.png"
-                width="243"
-                height="232"
-                alt="Фото кота после."
-              />
+              <picture>
+                <img
+                  class="before-img img-active"
+                  src="img/cat-fat.png"
+                  srcset="img/cat-fat@2x.png 2x"
+                  width="280"
+                  height="232"
+                  alt="Фото кота до."
+                />
+              </picture>
+
+              <picture>
+                <img
+                  class="after-img"
+                  src="img/cat-skinny.png"
+                  srcset="img/cat-skinny@2x.png 2x"
+                  width="243"
+                  height="232"
+                  alt="Фото кота после."
+                />
+              </picture>
             </div>
             <div class="before-after__range">
               <button class="before-after__button">Было</button>
