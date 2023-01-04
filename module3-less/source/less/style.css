@@ -72,11 +72,8 @@ a {
   }
 }
 .page-header__logo {
-  width: 33px;
-  height: 37px;
-  background-image: url(../../../../img/logo-mobile.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
+  width: 35px;
+  height: 35px;
 }
 .page-header__logo:hover {
   opacity: 0.8;
@@ -86,23 +83,35 @@ a {
 }
 @media (min-width: 768px) {
   .page-header__logo {
-    width: 60px;
-    height: 50px;
-    background-image: url(../../../../img/logo-tablet.svg);
     margin-right: 13px;
   }
 }
 @media (min-width: 1440px) {
   .page-header__logo {
-    width: 70px;
-    height: 59px;
-    background-image: url(../../../../img/logo-desktop.svg);
+    width: 61px;
+    height: 50px;
     margin-right: 14px;
+  }
+}
+@media (min-width: 768px) {
+  .logo-mobile {
+    display: none;
+  }
+  .logo-tablet {
+    display: block;
+  }
+}
+@media (min-width: 1440px) {
+  .logo-tablet {
+    display: none;
+  }
+  .logo-desktop {
+    display: block;
   }
 }
 .page-header__logo--text {
   margin-left: -7px;
-  margin-top: 8px;
+  margin-top: 11px;
 }
 @media (min-width: 768px) {
   .page-header__logo--text {
@@ -114,6 +123,12 @@ a {
 }
 .page-header__logo--text:active {
   opacity: 0.6;
+}
+@media (min-width: 1440px) {
+  .page-header__logo--text svg {
+    width: 117px;
+    height: 21px;
+  }
 }
 @media (max-width: 768px) {
   .main-nav--close {
@@ -1325,6 +1340,9 @@ a {
     margin-top: 59px;
   }
 }
+.user-list__login-icon {
+  text-align: center;
+}
 .page-footer__logo {
   position: relative;
   left: calc(96px - 20px);
@@ -1396,22 +1414,46 @@ a {
 .copyright__link:active {
   opacity: 0.6;
 }
-.social-icon:hover path {
+.social-icon--vk {
+  fill: #666;
+}
+.social-icon--vk:hover {
   fill: #68b738;
 }
-.social-icon:active path {
+.social-icon--vk:active {
   fill: #68b738;
   opacity: 0.6;
 }
-.social-icon-fb:hover path {
+.social-icon--ig {
+  fill: #666;
+}
+.social-icon--ig:hover {
+  fill: #68b738;
+}
+.social-icon--ig:active {
+  fill: #68b738;
+  opacity: 0.6;
+}
+.social-icon--fb {
+  fill: none;
+  stroke: #666;
+}
+.social-icon--fb:hover {
   stroke: #68b738;
 }
-.social-icon-fb:active path {
-  fill: #68b738;
+.social-icon--fb:active {
+  stroke: #68b738;
   opacity: 0.6;
 }
-.page-footer--grey-bg {
-  background-color: #f2f2f2;
+.social-icon--copyright {
+  fill: #666;
+}
+.social-icon--copyright:hover {
+  fill: #68b738;
+}
+.social-icon--copyright:active {
+  fill: #68b738;
+  opacity: 0.6;
 }
 .catalog-page__title {
   font-family: inherit;

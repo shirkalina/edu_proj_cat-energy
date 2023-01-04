@@ -28,11 +28,8 @@
 }
 
 .page-header__logo {
-  width: 33px;
-  height: 37px;
-  background-image: url(../../../../img/logo-mobile.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
+  width: 35px;
+  height: 35px;
 
   &:hover {
     opacity: 0.8;
@@ -43,23 +40,39 @@
   }
 
   @media (min-width: @tabletwidth) {
-    width: 60px;
-    height: 50px;
-    background-image: url(../../../../img/logo-tablet.svg);
     margin-right: 13px;
   }
 
   @media (min-width: @desktopwidth) {
-    width: 70px;
-    height: 59px;
-    background-image: url(../../../../img/logo-desktop.svg);
+    width: 61px;
+    height: 50px;
     margin-right: 14px;
+  }
+}
+
+@media (min-width: @tabletwidth) {
+  .logo-mobile {
+    display: none;
+  }
+
+  .logo-tablet {
+    display: block;
+  }
+}
+
+@media (min-width: @desktopwidth) {
+  .logo-tablet {
+    display: none;
+  }
+
+  .logo-desktop {
+    display: block;
   }
 }
 
 .page-header__logo--text {
   margin-left: -7px;
-  margin-top: 8px;
+  margin-top: 11px;
 
   @media (min-width: @tabletwidth) {
     align-self: center;
@@ -71,5 +84,12 @@
 
   &:active {
     opacity: 0.6;
+  }
+}
+
+.page-header__logo--text svg {
+  @media (min-width: @desktopwidth) {
+    width: 117px;
+    height: 21px;
   }
 }
